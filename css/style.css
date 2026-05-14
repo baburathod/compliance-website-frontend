@@ -18,6 +18,8 @@ body {
     background-color: var(--bg-color);
     line-height: 1.6;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -69,11 +71,11 @@ button {
     /* Spacing */
     --section-padding: 6rem 0;
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    /* Shadows - Premium Soft */
+    --shadow-sm: 0 2px 4px rgba(11, 19, 43, 0.04);
+    --shadow-md: 0 8px 16px rgba(11, 19, 43, 0.06);
+    --shadow-lg: 0 16px 32px rgba(11, 19, 43, 0.08);
+    --shadow-hover: 0 24px 48px rgba(11, 19, 43, 0.12);
     
     /* Transitions */
     --transition: all 0.3s ease;
@@ -128,9 +130,9 @@ p { margin-bottom: 1rem; }
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 1.75rem;
     font-family: var(--font-body);
-    font-weight: 500;
+    font-weight: 600;
     border-radius: var(--border-radius);
     text-align: center;
     cursor: pointer;
@@ -512,7 +514,8 @@ p { margin-bottom: 1rem; }
 .social-links a:hover { background: var(--primary); }
 .footer-links h4 { color: #FFF; margin-bottom: 1.5rem; }
 .footer-links ul li { margin-bottom: 0.75rem; }
-.footer-links ul li a:hover { color: #FFF; padding-left: 5px; }
+.footer-links ul li a { display: inline-block; transition: var(--transition); }
+.footer-links ul li a:hover { color: #FFF; transform: translateX(5px); }
 .footer-bottom {
     margin-top: 4rem;
     padding-top: 2rem;
@@ -532,6 +535,7 @@ p { margin-bottom: 1rem; }
 
 /* 1024px */
 @media (max-width: 1024px) {
+    .section { padding: 5rem 0; }
     .grid-2 { gap: 2rem; }
     .grid-3 { grid-template-columns: repeat(2, 1fr); }
     .grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -577,6 +581,7 @@ p { margin-bottom: 1rem; }
 
 /* 576px */
 @media (max-width: 576px) {
+    .section { padding: 3rem 0; }
     .hero-actions { flex-direction: column; }
     .hero-stats { flex-direction: column; gap: 1.5rem; }
     .form-group.grid-2 { grid-template-columns: 1fr; gap: 1.5rem; }
