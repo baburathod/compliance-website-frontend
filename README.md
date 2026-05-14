@@ -2,13 +2,17 @@
 
 A pixel-perfect, fully responsive static frontend website built from a provided design. This project was developed as a frontend internship assignment demonstrating expertise in creating visually striking, scalable, and responsive web interfaces without relying on heavy frameworks.
 
+**🔗 Live Demo:** [https://compliance-website-frontend.vercel.app/](https://compliance-website-frontend.vercel.app/)
+
 ## 🚀 Project Overview
 
 The **CompliGuard** website is a modern, professional web interface for a compliance solutions provider. It features dynamic layouts, engaging micro-animations, and a highly polished UI. 
 
-### Key Highlights:
+### Key Highlights & QA Polish:
 - **Pixel-Perfect UI:** Accurately matches design spacing, typography, and visual hierarchy.
 - **Fully Responsive:** Adapts seamlessly across desktop, tablet, and mobile devices (down to 375px) without breaking layouts or horizontal scrolling.
+- **Premium Visual Polish:** Features crisp font antialiasing (`-webkit-font-smoothing`), buttery-smooth hover transitions (`transform: translateX`), and premium soft layering shadows.
+- **Accessibility & UX Fixes:** Includes strict mobile background scroll-locking when the mobile menu is active, preventing layout jitter.
 - **Clean Architecture:** Semantic HTML5, structured CSS with CSS Variables, and modular Vanilla JS for interactivity.
 - **Asset Integration:** Utilizes all provided custom assets (PNGs, floating vectors, custom checkmarks, and icons).
 
